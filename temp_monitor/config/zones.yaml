@@ -1,0 +1,11 @@
+# 구역별 정상 온도 범위(°C)와 탐지 파라미터
+# min/max: 임계 범위(이탈 시 알람), spike_window: 이동평균 창(샘플 수),
+# spike_sigma: 이동평균±(sigma*표준편차) 초과 시 급변 알람
+zones:
+  냉동1: { min: -25.0, max: -18.0 }
+  냉장1: { min:   0.0, max:   5.0 }
+  급냉:   { min: -40.0, max: -30.0 }
+  건조1: { min:  35.0, max:  55.0 }
+detection:
+  spike_window: 10
+  spike_sigma: 3.0
